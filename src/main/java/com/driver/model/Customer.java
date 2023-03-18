@@ -16,7 +16,7 @@ public class Customer {
     private String password;
 
 
-    @OneToMany(mappedBy = "customer", orphanRemoval = true, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     List<TripBooking> tripBookingList = new ArrayList<>();
 
     public Customer() {
